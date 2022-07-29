@@ -63,6 +63,7 @@ export const signInWithGoogle = () => {
   })
 
 const logout = () => {
+  console.log("hello you need to login")
   signOut(auth);
   };
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Avatar } from "flowbite-react";
-const Leftbar = () => {
+import { logout } from "../../pages/Firebase";
+const Leftbar = (props) => {
   const [navShow, setNavShow] = useState(false);
   const handleNavShow = () => setNavShow(true);
   const handleNavClose = () => setNavShow(false);
@@ -19,9 +20,9 @@ const Leftbar = () => {
               size={"lg"}
             >
               <div className="space-y-1 font-medium dark:text-white">
-                <div>Jese Leos</div>
+                <div>{props.name}</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                  Joined in August 2014
+                  {props.collage}
                 </div>
               </div>
             </Avatar>
@@ -116,10 +117,10 @@ const Leftbar = () => {
           </ul>
         </div>
       </aside>
-      <nav class="shadow-sm sticky top-0 z-40 flex-none mx-auto w-full bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+      <nav class="shadow-sm hidden sticky top-0 z-40 flex-none mx-auto w-full bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-800">
         <div class="p-5 max-w-7xl m-auto w-full text-base lg:w-11/12">
           <div class="flex w-full">
-          <Avatar
+            <Avatar
               img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
               rounded={true}
               stacked={true}
@@ -137,7 +138,6 @@ const Leftbar = () => {
         aria-label="Sidebar"
       >
         <div className="overflow-y-auto h-full py-4 px-2 lg:px-6 border-r  shadow-sm  bg-white dark:bg-gray-800 ">
-       
           <ul className="space-y-2 mt-4">
             <li>
               <a
@@ -204,8 +204,8 @@ const Leftbar = () => {
             </li>
 
             <li>
-              <a
-                href="#"
+              <button
+                onClick={logout}
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <svg
@@ -222,7 +222,7 @@ const Leftbar = () => {
                   ></path>
                 </svg>
                 <span className="flex-1 ml-3 whitespace-nowrap">Sign Out</span>
-              </a>
+              </button>
             </li>
           </ul>
         </div>

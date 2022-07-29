@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import 'bootstrap';
+// import 'bootstrap';
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db, logout, setProfile, uploadImage } from "./Firebase";
