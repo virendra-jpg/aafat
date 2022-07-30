@@ -1,10 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Avatar } from "flowbite-react";
-import { logout } from "../../pages/Firebase";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth, db, logout, setProfile, uploadImage } from "../../pages/Firebase";
+
+
 const Leftbar = (props) => {
+  const navigate = useNavigate();
+  const [user, loading, error] = useAuthState(auth);
   const [navShow, setNavShow] = useState(false);
   const handleNavShow = () => setNavShow(true);
   const handleNavClose = () => setNavShow(false);
+  useEffect(() => {
+    console.log('User Changed');
+    if(loading) return;
+    if (!user) return navigate("/register");
+  }, [user, loading]);
+  // const signOut = () => {
+  // logout();
+  // }
+  const signOut = () => {
+    logout();
+    navigate("/")
+  }
   return (
     <>
       <aside
@@ -14,7 +32,7 @@ const Leftbar = (props) => {
         <div className="overflow-y-auto h-full py-4 px-2 lg:px-6 border-r  shadow-sm  bg-white dark:bg-gray-800 ">
           <div className="lg:p-2">
             <Avatar
-              img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
+              img={user.photoURL}
               rounded={true}
               stacked={true}
               size={"lg"}
@@ -50,7 +68,7 @@ const Leftbar = (props) => {
 
             <li>
               <a
-                href="#"
+                href={'/task'}
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <svg
@@ -111,7 +129,7 @@ const Leftbar = (props) => {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-                <span className="flex-1 ml-3 whitespace-nowrap">Sign Out</span>
+                <span className="flex-1 ml-3 whitespace-nowrap" onClick={signOut}>Sign Out</span>
               </a>
             </li>
           </ul>
@@ -121,10 +139,10 @@ const Leftbar = (props) => {
         <div class="p-5 max-w-7xl m-auto w-full text-base lg:w-11/12">
           <div class="flex w-full">
             <Avatar
-              img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-              rounded={true}
-              stacked={true}
-              size={"md"}
+              img={user.photoURL}
+                rounded={true}
+              // stacked={true}
+              // size={"md"}
             >
               <div className="space-y-1 font-medium dark:text-white">
                 <div>Jese Leos</div>

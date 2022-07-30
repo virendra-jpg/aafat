@@ -4,13 +4,13 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db, logout, setProfile, uploadImage } from "./Firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { Button, Modal, Accordion } from "flowbite-react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { async } from "@firebase/util";
 import Sidebar from "../components/Navbar/Sidebar";
 // import "./style.css";
 import "../index.css";
 export default function Dashboard() {
-  const [user] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [data1, setData1] = useState("RRR");
   const [data2, setData2] = useState("RRR");
   const [data3, setData3] = useState("RRR");
@@ -31,6 +31,14 @@ export default function Dashboard() {
   let a = 0;
   const elements1 = ["", text, text, text, text, text];
   mul_text = text + text;
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate("/");
+
+  }, [user, loading]);
+
   const sun = async () => {
     const snap = await getDoc(doc(db, "People", user.uid));
 
