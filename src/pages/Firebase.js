@@ -5,16 +5,14 @@ import { getFirestore, addDoc, doc, collection, setDoc, query, where , getDoc } 
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDjkSc-F8Uzy1JmYXfwgqDuYaI1_YZAtko",
-  authDomain: "firstproject-7388d.firebaseapp.com",
-  databaseURL: "https://firstproject-7388d-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "firstproject-7388d",
-  storageBucket: "firstproject-7388d.appspot.com",
-  messagingSenderId: "326496171217",
-  appId: "1:326496171217:web:ef07902811998dab4941f0",
-  measurementId: "G-BSQ9RCKZHP"
+  apiKey: "AIzaSyDFf3KKP3Mp9_PvPQyuRQzb_C1JfdzVMO8",
+  authDomain: "udghosh-a45db.firebaseapp.com",
+  projectId: "udghosh-a45db",
+  storageBucket: "udghosh-a45db.appspot.com",
+  messagingSenderId: "1064463757130",
+  appId: "1:1064463757130:web:c3510e586a4e1b2066dbb3",
+  measurementId: "G-KNTS3MTF83"
 };
-
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 const db = getFirestore(app);

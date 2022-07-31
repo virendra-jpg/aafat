@@ -31,16 +31,16 @@ const Reg = () => {
     return (
 
         <div style={{textAlign: 'center', marginTop: '10%', width: '300px', height: '300px', margin:'auto', marginTop: '10%'}}>
-            <img style={{width: '100px', height: '100px'}} src='./logo.png'  />
+            <img style={{width: '100px', height: '100px', margin: 'auto'}} src='./logo.png'  />
             
             <h1>UDGHOSH'22</h1>
             
 
             <div style={{marginTop: '3%'}}>
-            <button style={{width: "250px"}} type="button" className="btn btn-primary btn-lg" onClick={signInWithFacebook}><i className="bi bi-facebook"></i>  Login With Facebook</button>
+            <button style={{ backgroundColor: '#0d6efd'}} type="button" className="btn btn-primary btn-lg" onClick={signInWithFacebook}><i className="bi bi-facebook"></i>  Login With Facebook</button>
             <br/>
             <br/>
-            <button style={{width: "250px"}} type="button" className="btn btn-secondary btn-lg" onClick={signInWithGoogle}><i className="bi bi-google"></i>  Login with Google</button>
+            <button style={{backgroundColor: '#6c757d' }} type="button" className="btn btn-secondary btn-lg" onClick={signInWithGoogle}><i className="bi bi-google"></i>  Login with Google</button>
             </div>
 
 

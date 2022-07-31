@@ -1,0 +1,88 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  .red {
+    color: red;
+  }
+  
+ 
+  
+  .heading {
+    margin: 15px;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .hr {
+    border: 2px outset red;
+    width: 40%;
+
+    margin: auto;
+  }
+  
+  .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 10px 0px;
+    margin: auto;
+  }
+  
+  .input label {
+    margin: 5px 0px;
+  }
+  
+  .input input {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    height: 35px;
+  }
+  
+  .input .btn {
+    position: relative;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 5px 20px rgba(192, 36, 0, 0.4), 0 2px 2px rgba(192, 36, 0, 0.4);
+    background-image: radial-gradient(100% 75% at 50% 100%,
+        #62fee6 0%,
+        #004bc4 100%);
+    border: none;
+    border-radius: 100px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 45%;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+    background-image: radial-gradient(100% 75% at 50% 100%,
+        #40ffe2 0%,
+        #003c9c 100%);
+  }
+  
+  .btn:active {
+    outline: none;
+    color: #f9e3bf;
+    background-image: radial-gradient(100% 75% at 50% 100%,
+        #24fedd 0%,
+        #012b70 100%);
+  }

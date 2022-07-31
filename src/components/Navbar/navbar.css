@@ -1,0 +1,22 @@
+
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .navbar {
+    background-color: #3f3cd0;
+    color: white;
+  }
+  .offcanvas-lg {
+    background-color: #3f3cd0;
+  }
+  @media (max-width: 1000px) {
+    .reg-btn {
+      margin-top: 1rem;
+    }
+  }

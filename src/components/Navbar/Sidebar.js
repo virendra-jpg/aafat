@@ -3,6 +3,7 @@ import { Avatar } from "flowbite-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db, logout, setProfile, uploadImage } from "../../pages/Firebase";
+import { positions } from "@mui/system";
 
 
 const Leftbar = (props) => {
@@ -25,12 +26,39 @@ const Leftbar = (props) => {
   }
   return (
     <>
-      <aside
+
+<div style={{width: '100%', padding: 'auto' }}>
+<Avatar
+              img={user.photoURL}
+              rounded={true}
+              stacked={true}
+              size={"lg"}
+              style={{margin: 'auto',display : 'flex',
+              flexDirection : 'column',
+              alignItems : 'center',
+              justifyContent : 'center'}}
+            >
+              
+
+              </Avatar>
+              
+              <nav style={{width: '100%', height:'50px', marginTop: '10px', fontWeight: 'bold'}}> 
+               <a href='#details' ><button  style={{width: '40%', border: '2px solid black', height: '100%', borderRadius: '5px', backgroundColor: 'grey',  margin: 'auto'}}  >My Profile</button> </a> 
+               <a href='#pointsdistribution' > <button style={{width: '40%',  border: '2px solid black', height: '100%', borderRadius: '5px', backgroundColor: 'grey',  margin: 'auto'}} >Points Distribution</button> </a>
+               <a onClick={signOut}> <button style={{width: '3rem', border: '2px solid black', height: '50px', borderRadius: '5px', backgroundColor: 'grey',  margin: 'auto', position: 'absolute', right: '0' 
+              }}><i style={{fontSize: '1rem', color: 'red'}} className="bi bi-box-arrow-right"></i></button> </a>
+              </nav>
+
+</div>
+
+
+
+      {/* <aside
         className="hidden md:block mx-auto w-full h-screen sticky top-0 z-40  bg-white border-b  dark:bg-gray-800"
         aria-label="Sidebar"
       >
-        <div className="overflow-y-auto h-full py-4 px-2 lg:px-6 border-r  shadow-sm  bg-white dark:bg-gray-800 ">
-          <div className="lg:p-2">
+        <div className="overflow-y-auto h-full py-4 px-2 lg:px-6 border-r  shadow-sm  bg-white dark:bg-gray-800 "> */}
+          {/* <div className="lg:p-2">
             <Avatar
               img={user.photoURL}
               rounded={true}
@@ -38,15 +66,15 @@ const Leftbar = (props) => {
               size={"lg"}
             >
               <div className="space-y-1 font-medium dark:text-white">
-                <div>{props.name}</div>
+                // <div>{props.name}</div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
                   {props.collage}
                 </div>
               </div>
             </Avatar>
-          </div>
+          </div> */}
 
-          <ul className="space-y-2 mt-6">
+          {/* <ul className="space-y-2 mt-6">
             <li>
               <a
                 href="#"
@@ -68,7 +96,7 @@ const Leftbar = (props) => {
 
             <li>
               <a
-                href={'/task'}
+                href={'#pointsdistribution'}
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
               >
                 <svg
@@ -132,10 +160,10 @@ const Leftbar = (props) => {
                 <span className="flex-1 ml-3 whitespace-nowrap" onClick={signOut}>Sign Out</span>
               </a>
             </li>
-          </ul>
-        </div>
-      </aside>
-      <nav class="shadow-sm hidden sticky top-0 z-40 flex-none mx-auto w-full bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-800">
+          </ul> */}
+        {/* </div>
+      </aside> */}
+      {/* <nav class="shadow-sm hidden sticky top-0 z-40 flex-none mx-auto w-full bg-white border-b border-gray-200 dark:border-gray-700 dark:bg-gray-800">
         <div class="p-5 max-w-7xl m-auto w-full text-base lg:w-11/12">
           <div class="flex w-full">
             <Avatar
@@ -150,8 +178,8 @@ const Leftbar = (props) => {
             </Avatar>
           </div>
         </div>
-      </nav>
-      <aside
+      </nav> */}
+      {/* <aside
         className="md:hidden mx-auto w-full h-screen sticky top-0 z-40  bg-white border-b  dark:bg-gray-800"
         aria-label="Sidebar"
       >
@@ -244,7 +272,7 @@ const Leftbar = (props) => {
             </li>
           </ul>
         </div>
-      </aside>
+      </aside> */}
     </>
   );
 };

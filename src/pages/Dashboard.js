@@ -4,6 +4,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db, logout, setProfile, uploadImage } from "./Firebase";
 import { doc, getDoc } from "firebase/firestore";
 import { Button, Modal, Accordion } from "flowbite-react";
+import Footer from "./footer";
 import React, { useEffect, useState } from "react";
 import { async } from "@firebase/util";
 import Sidebar from "../components/Navbar/Sidebar";
@@ -63,48 +64,126 @@ export default function Dashboard() {
   sun();
 
   return (
-    <>
-      <div className="flex flex-col md:flex-row ">
-        <div className="basis-1/4">
-          <Sidebar name ={data6} collage={data1} />
+    <><div>
+      <Sidebar />
+      
+      
+      <div>
+      <div style={{width: '350px', margin: 'auto', textAlign: 'center', marginTop: '20px'}} id='details' >
+        
+
+
+        <h2 style={{marginTop: '10px', fontSize: '1.5rem', fontWeight: 'bold'}}> Hii {data6} </h2>
+        <h3>See Your Details</h3>
+        <h4 style={{marginTop: '10px', marginBottom: '5px' , fontSize: '1rem', fontWeight: 'bold'}}>Your Email:</h4>
+        <div style={{padding: '5px', backgroundColor: '#0000001a', borderRadius: '5px'}}>
+        <h4>{data2}</h4>
         </div>
-        <div className="basis-3/4 p-3">
-          <Button onClick={handleShow}>Toggle modal</Button>
-          <Modal show={modalShow}>
-            <Modal.Header>Terms of Service</Modal.Header>
-            <Modal.Body>
-              <div className="space-y-6">
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  With less than a month to go before the European Union enacts
-                  new consumer privacy laws for its citizens, companies around
-                  the world are updating their terms of service agreements to
-                  comply.
-                </p>
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  The European Union’s General Data Protection Regulation
-                  (G.D.P.R.) goes into effect on May 25 and is meant to ensure a
-                  common set of data rights in the European Union. It requires
-                  organizations to notify users as soon as possible of high-risk
-                  data breaches that could personally affect them.
-                </p>
-              </div>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button onClick={handleClose}>I accept</Button>
-              <Button color="gray">Decline</Button>
-            </Modal.Footer>
-          </Modal>
+        <h4 style={{marginTop: '10px', marginBottom: '5px' , fontSize: '1rem', fontWeight: 'bold'}}>Your College:</h4>
+        <div style={{padding: '5px', backgroundColor: '#0000001a', borderRadius: '5px'}}>
+        <h4>{data1}</h4>
+        </div>
+        <h4 style={{marginTop: '10px',marginBottom: '5px' ,fontSize: '1rem', fontWeight: 'bold'}}>Your Contact Number:</h4>
+        <div style={{padding: '5px', backgroundColor: '#0000001a', borderRadius: '5px'}}>
+        <h4>{data7}</h4>
+        </div>
+        <h4 style={{marginTop: '10px',marginBottom: '5px' ,fontSize: '1rem', fontWeight: 'bold'}}>Your Score:</h4>
+        <div style={{padding: '5px', backgroundColor: '#0000001a', borderRadius: '5px'}}>
+        <h4>none</h4>
+        </div>
+        <h4 style={{marginTop: '10px',marginBottom: '5px' ,fontSize: '1rem', fontWeight: 'bold'}}>Referral Code:</h4>
+        <div style={{padding: '5px', backgroundColor: '#0000001a', borderRadius: '5px'}}>
+        <h4>none</h4>
+        </div>
+        
+        {/* <div className="basis-1/4">
+          <Sidebar name ={data6} collage={data1} />
+        </div> */}
+        {/* <div >
+          
+          
           <div className="main1">
             <p className="text-green-500">Name: {data6}</p>
             <p>Email Id: {data2}</p>
             <p>Phone Number: {data7}</p>
             <p>College: {data1}</p>
             <p>Facebook Id: {data3}</p>
-            <p>Instagram Id: {data4}</p>
+            <p>Instagram I                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            d: {data4}</p>
             <p>LinkedIn Id: {data5}</p>
             <p>Twitter Id: {data8}</p>
           </div>
-        </div>
+        </div> */}
+      </div>
+      <Footer />
+      </div>
+      <div>
+      <div id="pointsdistribution" style={{textAlign: 'center', width: '100%'}} >
+      <h1 style={{fontSize: '2rem', fontWeight: 'bold', textAlign: 'center',marginTop: '2%' ,}}>Points Distribution</h1>
+
+      <table striped bordered hover style={{width: '80%', marginRight: 'auto',marginLeft: 'auto', marginTop: '2%' ,fontWeight: 'bold'}}>
+      <thead style={{backgroundColor:"darkmagenta", height: '40px' }}>
+        <tr>
+          <th>Tasks</th>
+          <th>Points</th>
+          
+        </tr>
+      </thead>
+      <tbody style={{border: '2px solid black', }}>
+        <tr>
+          <td>Like and Share on Facebook</td>
+          <td>20</td>
+          
+        </tr>
+        <hr></hr>
+        <tr>
+          <td>Updating job profile on Linkedin</td>
+          <td>60</td>
+          
+        </tr>
+        <hr></hr>
+        <tr>
+          <td>sharing the posts as insta story</td>
+          <td>30</td>
+          
+        </tr>
+        <hr></hr>
+        <tr>
+          <td>If Rf is used for registration</td>
+          <td>40</td>
+                         
+        </tr>
+        <hr></hr>
+        <tr>
+          <td>Last year participants coming back(Loyalty)</td>
+          <td>50</td>
+        </tr>
+        <hr></hr>
+        <tr>
+          <td>Pre-registration</td>
+          <td>50</td>
+        </tr>
+        <hr></hr>
+        <tr>
+          <td>if write a blog and this blog is verified by</td>
+          <td>60</td>
+        </tr>
+        <hr></hr>
+        
+        <tr>
+          <td>Upgradation of Level</td>
+          <td>50</td>
+        </tr>
+        <hr></hr>
+        <tr>
+          <td>Event Organizing in your city</td>
+          <td>Depends</td>
+        </tr>
+
+      </tbody>
+    </table>
+      </div>
+      <Footer />
+      </div>
       </div>
     </>
   );
