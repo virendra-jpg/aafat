@@ -5,14 +5,15 @@ import { getFirestore, addDoc, doc, collection, setDoc, query, where , getDoc } 
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDFf3KKP3Mp9_PvPQyuRQzb_C1JfdzVMO8",
-  authDomain: "udghosh-a45db.firebaseapp.com",
-  projectId: "udghosh-a45db",
-  storageBucket: "udghosh-a45db.appspot.com",
-  messagingSenderId: "1064463757130",
-  appId: "1:1064463757130:web:c3510e586a4e1b2066dbb3",
-  measurementId: "G-KNTS3MTF83"
+  apiKey: "AIzaSyA-PoW2G_cAiJoOzuIY-KwOD4u6J421cE8",
+  authDomain: "ca-udghosh22.firebaseapp.com",
+  projectId: "ca-udghosh22",
+  storageBucket: "ca-udghosh22.appspot.com",
+  messagingSenderId: "750620492300",
+  appId: "1:750620492300:web:2923b762ae459b8b2aa429",
+  measurementId: "G-44YKWH8227"
 };
+
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 const db = getFirestore(app);
