@@ -52,7 +52,7 @@ const Details = () => {
 
                     <div className="input">
                         <label for="contact">Contact No.:<span className="red">*</span></label>
-                        <input placeholder='4578457856' type="number" id="phone" name="phone" min="10" max="10" required onChange={handleChange} value={data.phone}></input>
+                        <input placeholder='9999999999' type="tel" id="phone" name="phone" required onChange={handleChange} value={data.phone}></input>
                     </div>
 
                     <div className="input">
