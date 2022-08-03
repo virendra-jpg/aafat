@@ -75,9 +75,8 @@ return (
               country to develop your network
             </li>
             <li>
-              Enhance your image and Be associated with Asia's largest science
-              and technology festival and lead your college to a promising
-              future
+              Enhance your image and Be associated with India's largest sports festival 
+              and lead your career to a promising future
             </li>
             <li>
               Become the Leader of your College. An opportunity to represent
