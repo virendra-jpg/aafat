@@ -69,6 +69,7 @@ export default function Dashboard() {
       
       
       <div>
+
       <div style={{width: '350px', margin: 'auto', textAlign: 'center', marginTop: '20px'}} id='details' >
         
 
@@ -184,7 +185,7 @@ export default function Dashboard() {
       </div>
       <Footer />
       </div>
-      </div>
+      </div> 
     </>
   );
 }

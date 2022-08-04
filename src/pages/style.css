@@ -606,3 +606,21 @@ h1{
   text-align: center;
   -webkit-backface-visibility: hidden;
 }
+.verification_bg {
+
+  background-image: url('../../public/ranger.png') ;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.verify{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 40px;
+  /* background-color: #b8dfb4; */
+  border-radius: 50px;
+}
