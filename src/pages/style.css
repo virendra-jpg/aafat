@@ -610,10 +610,20 @@ h1{
 
   background-image: url('../../public/ranger.png') ;
 
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  
+  background-position: 'center';
+  width: '100vw';
+  height: '100vh'; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 100vh; 
+  width: 100vw;
+  background-position: center; 
 }
 .verify{
   text-align: center;
