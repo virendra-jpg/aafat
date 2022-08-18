@@ -10,21 +10,21 @@ export default function Section() {
     <div className="App">
       <nav className="navbar  navbar-expand-lg .bg-gradient">
         <div className="container-fluid">
-          <a href="https://udghosh.org.in/" target='black'><img
+          <img
             src="./logo.png"
             alt="Udghosh Logo"
             width="50"
             className="d-inline-block align-text-top navbar-logo ms-5"
-          /></a>
+          />
 
           <button
-            className="btn btn-outline-light d-lg-none"
+            className="btnn d-lg-none"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasResponsive"
             aria-controls="offcanvasResponsive"
           >
-            <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
           </button>
 
           <div
@@ -42,7 +42,7 @@ export default function Section() {
               />
               <button
                 type="button"
-                className="btn-close"
+                // className="btn-close "
                 data-bs-dismiss="offcanvas"
                 data-bs-target="#offcanvasResponsive"
                 aria-label="Close"
@@ -50,12 +50,21 @@ export default function Section() {
               ><i style={{fontSize: '30px'}} class="bi bi-x-circle-fill"></i></button>
             </div>
             <div className="offcanvas-body">
-              <ul className="navbar-nav nav-tabs mb-lg-0">
+              <ul className="navbar-nav mb-lg-0">
+                <li className="nav-item me-3">
+                  <a
+                    className="nav-link"
+                    href="#"
+                    
+                  >
+                    HOME
+                  </a>
+                </li>
                 <li className="nav-item me-3">
                   <a
                     className="nav-link"
                     href="#why"
-                    style={{ color: "white" }}
+                    
                   >
                     WHY CA
                   </a>
@@ -64,7 +73,7 @@ export default function Section() {
                   <a
                     className="nav-link"
                     href="#responsiblity"
-                    style={{ color: "white" }}
+                    
                   >
                     RESPONSIBLITIES 
 
@@ -74,7 +83,7 @@ export default function Section() {
                   <a
                     className="nav-link"
                     href="#perks"
-                    style={{ color: "white" }}
+                    
                   >
                   PERKS & SPONSORS
                   </a>
@@ -84,7 +93,7 @@ export default function Section() {
                   <a
                     className="nav-link"
                     href="#contact"
-                    style={{ color: "white"}}
+                    
                   >
                     CONTACT US
                   </a>
@@ -93,9 +102,7 @@ export default function Section() {
               <a href='/register'> 
               <button
                 type="button"
-                
-                
-                style={{ color: "white", border: '1px solid blue', borderRadius: '10%', padding: '5px', backgroundColor: 'blue'}}
+                style={{ color: "white", border: '1px solid blue', borderRadius: '10px', margin:'5px 0 0 8px', padding: '5px', backgroundColor: 'blue'}}
               >
                 Register Now
               </button>

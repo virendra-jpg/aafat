@@ -9,11 +9,22 @@
     }
   }
   .navbar {
-    background-color: #3f3cd0;
-    color: white;
+    font-size: large;
   }
-  .offcanvas-lg {
-    background-color: #3f3cd0;
+  
+  .btnn {
+    border: 2px solid white;
+    border-radius: 10%;
+    padding: 5px;
+  }
+  .btnn:hover {
+    background-color: blue;
+  }
+  
+  .nav-link:hover {
+    color: red;
+    transform: scale(1.1,1.1);
+    /* font-weight: bold; */
   }
   @media (max-width: 1000px) {
     .reg-btn {

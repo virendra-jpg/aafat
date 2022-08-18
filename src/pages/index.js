@@ -25,12 +25,12 @@ return (
        
     
         <div>
-          <Navbar />
 
 
         
         <div className='bg'>
          <div  style={{margin: 'auto', marginBottom: '5%'}} className='row'>
+          <Navbar />
 
           
         <div className='feature-box col-lg-6 col-md-6 col-sm-12'> 
