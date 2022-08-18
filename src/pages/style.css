@@ -608,7 +608,7 @@ h1{
 }
 .verification_bg {
 
-  background-image: url('../../public/ranger.png') ;
+  /* background-image: url('../../public/ranger.png') ; */
 
   /* -webkit-background-size: cover;
   -moz-background-size: cover;

@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db, logout, setProfile, uploadImage } from "./Firebase";
 import './details.css'
-import '../css/registration_form.css'
+// import '../css/registration_form.css'
 
 const Details = () => {
     const navigate = useNavigate();

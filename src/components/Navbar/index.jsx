@@ -10,12 +10,12 @@ export default function Section() {
     <div className="App">
       <nav className="navbar  navbar-expand-lg .bg-gradient">
         <div className="container-fluid">
-          <img
+          <a href="https://udghosh.org.in/" target='black'><img
             src="./logo.png"
             alt="Udghosh Logo"
             width="50"
             className="d-inline-block align-text-top navbar-logo ms-5"
-          />
+          /></a>
 
           <button
             className="btn btn-outline-light d-lg-none"

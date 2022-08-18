@@ -58,7 +58,7 @@ return (
   </div>
   <div className="text-center text-dark p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
     © 2022 Copyright:  
-    <a className="text-dark" href= "udghosh.org.in">  UDGHOSH22</a>
+    <a className="text-dark" href= "https://udghosh.org.in/" target='blank'>  UDGHOSH22</a>
   </div>
 </footer>
     </div>
