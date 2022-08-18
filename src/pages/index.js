@@ -35,7 +35,7 @@ return (
           
         <div className='feature-box col-lg-6 col-md-6 col-sm-12'> 
         <Typography style={{ marginTop: '10%' , alignSelf:'center',fontStretch:'extra-expanded',color:'#00008B', fontSize:45, fontWeight:'bolder',paddingTop:0,paddingLeft:'5vw', textAlign:'left', display:{xs:'flex'},fontFamily: 'fangsong'}}>CAMPUS AMBASSADOR PROGRAM</Typography>
-    <Typography style={{textAlign:'center',fontWeight:'bold',marginTop:'7vh',marginLeft:0,fontSize:25}}>Be the Representative of your Campus</Typography>
+    <Typography style={{textAlign:'center',fontWeight:'bold',marginTop:'7vh',marginLeft:0,fontSize:25}}>Be the CAMPUS AMBASSADOR and represent your college in the biggest Sports festival</Typography>
         </div>
         <div style={{marginRight: '0',  }} className='container feature-box col-lg-6 col-md-6 col-sm-12'>
           <img style={{width: '375px', marginTop: '10%', marginTop: '10%', marginLeft: 'auto', marginRight: 'auto'}} src='./user1.png' />
@@ -65,18 +65,18 @@ return (
                 listStyleType: 'disk'
                 
           }} >
-            <li>Improve your skill set</li>
+            <li>Improve your skill set.</li>
             <li>
               Enhance your communication and managerial skills Increase your
-              contacts
+              contacts.
             </li>
             <li>
               Interact with people coming from diverse fields across the
-              country to develop your network
+              country to develop your network.
             </li>
             <li>
               Enhance your image and Be associated with India's largest sports festival 
-              and lead your career to a promising future
+              and lead your career to a promising future.
             </li>
             <li>
               Become the Leader of your College. An opportunity to represent
@@ -102,7 +102,7 @@ return (
 
 
 
-<h1 style={{fontSize: '2rem', textAlign: 'center', fontWeight: 'bold', marginBottom: '1%'}} >responsiblities</h1>
+<h1 style={{fontSize: '2rem', textAlign: 'center', fontWeight: 'bold', marginBottom: '1%'}} >RESPONSIBLITIES</h1>
 
 
 <Box style={{minHeight:'28rem',display:'flex',flexWrap:'wrap',justifyContent:'space-between',paddingLeft:'6rem',paddingRight:'6rem',alignSelf:'center'}}>
@@ -236,7 +236,7 @@ return (
     <img style={{display: 'inline-block', height: '200px', width: "200px"}} src="./p2e2.png" />
     <article className="box">
         <header>
-          <h1 style={{fontSize: '2rem', textAlign: 'center', fontWeight: 'bold', margin: '2%'}}>Perks & Sponsors</h1>
+          <h1 style={{fontSize: '2rem', textAlign: 'center', fontWeight: 'bold', margin: '2%'}}>PERKS & SPONSORS</h1>
         </header>
         <div className="row" style={{textAlign: 'center', margin: 'auto' , alignItems: 'center'}}>
           <div className=' col-sm-12 col-lg-4 col-md-4' >
