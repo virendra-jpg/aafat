@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url("");
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+
+.img{
+    padding: 7rem 1rem 7rem;
+    background-color: rgba(40, 67, 143, 0.584);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 50%;
+    border-top-right-radius: rem;
+    border-bottom-left-radius: 50%;
+}
+
+.row .heroimg{
+    width: 50%;
+
+}
+
+.form{
+    background-color: rgba(225, 225, 225, 0.53);
+    padding: 30px;
+    color: rgb(83, 83, 83);
+    /* border-top-right-radius: ;
+    border-bottom-right-radius:; */
+   padding: 2% 5%;
+}
+
+.form h2{
+    margin-bottom: 10%;
+    text-align: center;
+    color: rgb(30, 30, 30);
+}
+
+.form input[type='text'],
+.form input[type='email'],
+.form input[type='password'],
+.form input[type='url'],
+.form input[type='number']{
+    border: 0;
+    padding: 5px 5px;
+    margin: 2px 2px;
+    border-bottom: 1px solid grey;
+    background-color: transparent;
+}
+
+.form input[type='tel']{
+    border: 0;
+    padding: 10px 10px;
+    margin: 2px 2px;
+    border-bottom: 1px solid grey;
+    color: grey;
+    background-color: transparent;
+    width: 30%;
+    text-align: center;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+.form button{
+    margin-top: 50px;
+}
+
+.form button:hover{
+    transform: scale(0.98);
+}
+
+.cont{
+    padding: 5% 15%;
+}
+
+
+/* responsive */
+@media screen {
+    
+}
+.img{
+
+}
