@@ -15,7 +15,7 @@ const Details = () => {
 
     }, [user, loading]);
 
-    const [data, setData] = useState({ name: "", email: "", phone: "", fb: "", insta: "", linkedin: "", college: "", twitter: "" });
+    const [data, setData] = useState({ name: "", email: "", phone: "", fb: "", insta: "", linkedin: "", college: "", twitter: "", referred_by: "" });
     const [image, setImage] = useState("");
     const [url, setUrl] = useState("");
     const handleChange = event => {
@@ -164,6 +164,13 @@ const Details = () => {
                                 Facebook Profile:
                             </label>
                             <input id="fb" type="url" name="fb" pattern="https://.*" required onChange={handleChange} value={data.fb}
+                            />
+                        </div>
+                        <div className="input">
+                            <label htmlFor="exampleInputPassword1" className="form-label">
+                                Facebook Profile:
+                            </label>
+                            <input id="referral" type="text" name="referred_by"  required onChange={handleChange} value={data.referred_by}
                             />
                         </div>
                         <div className="input">
