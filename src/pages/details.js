@@ -168,7 +168,7 @@ const Details = () => {
                         </div>
                         <div className="input">
                             <label htmlFor="exampleInputPassword1" className="form-label">
-                                Facebook Profile:
+                                Referral Id(If available):
                             </label>
                             <input id="referral" type="text" name="referred_by"  required onChange={handleChange} value={data.referred_by}
                             />
